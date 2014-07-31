@@ -4,7 +4,7 @@ describe('solvers', function() {
   describe('findNRooksSolution()', function() {
 
     it('finds a valid solution for n of 1-8', function() {
-      _.range(1, 9).map(function(n) {
+      _.range(4, 9).map(function(n) {
         var solutionBoard = new Board(findNRooksSolution(n));
 
         expect(solutionBoard.get('n')).to.equal(n);
@@ -30,7 +30,7 @@ describe('solvers', function() {
   describe('findNQueensSolution()', function() {
 
     it('finds a valid solution for n of 0-8', function() {
-      _.range(1, 8).map(function(n) {
+      _.range(4, 8).map(function(n) {
         var solutionBoard = new Board(findNQueensSolution(n));
 
         expect(solutionBoard.get('n')).to.equal(n);
